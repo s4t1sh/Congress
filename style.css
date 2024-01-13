@@ -1,0 +1,22 @@
+:root{
+    --primary-color: #2aa9e0;
+}
+
+*{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.tagline{
+    color: var(--primary-color);
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.otp-btn{
+     background: var(--primary-color);
+     border: none;
+     color: white;
+     margin-left: 20px;
+     border-radius: 5px;
+}
