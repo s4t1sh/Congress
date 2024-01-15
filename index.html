@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+
+    <title>AICC | Communication Department</title>
+
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./dist/custom.css" />
+  </head>
+  <body>
+    <header class="flex justify-between items-center p-4">
+      <div class="flex gap-4 items-center">
+        <img src="../assets/logo.png" alt="logo" />
+        <p class="font-normal text-4xl">Communication Department (War Room)</p>
+      </div>
+    </header>
+
+    <div class="relative">
+      <img src="../assets/banner.png" alt="" class="w-full" />
+
+      <div class="absolute top-1/3 ps-8">
+        <p class="text-white font-semibold text-2xl">
+          Join the Volunteer program of Communication Department
+        </p>
+        <p class="banner-text mt-4">
+          Be a part of the change <br />
+          in the 2024 General Elections"
+        </p>
+        <button
+          class="flex justify-center items-center gap-8 bg-white px-[20px] py-[16px] rounded-lg font-medium mt-4"
+          onclick="toggleModal()"
+        >
+          Sign Up to Volunteer
+          <img src="../assets/icons/right-arrow.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <div style="background: #f8f5f5" class="flex items-center gap-6 px-24 py-4">
+      <div class="flex gap-4 items-center">
+        <img
+          src="../assets/icons/star.png"
+          style="width: 32px; height: 32px"
+          alt=""
+        />
+        <p>
+          INC was founded in 1885, making it one of the oldest political parties
+          in Asia.
+        </p>
+      </div>
+      <div class="flex gap-4 items-center">
+        <img
+          src="../assets/icons/play.png"
+          alt=""
+          style="width: 32px; height: 32px"
+        />
+        <p>
+          The INC historically encompassed a range of ideologies, including
+          socialism, secularism,liberal democracy.
+        </p>
+      </div>
+      <div class="flex gap-4 items-center">
+        <img
+          src="../assets/icons/infinity.png"
+          alt=""
+          style="width: 32px; height: 32px"
+        />
+        <p>
+          The INC Indira Gandhi, who was India's first woman Prime Minister.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <p class="font-semibold text-3xl text-center">
+        What are the ways I can offer my assistance?
+      </p>
+      <p class="font-light text-base mt-4 text-center" style="color: #222">
+        Choose from the options
+      </p>
+
+      <div class="grid grid-cols-4 gap-8 px-28 mt-8">
+        <div></div>
+
+        <div class="flex flex-col justify-center">
+            <div class="pb-4 shadow-xl">
+                <div
+                  style="background-color: #47b6b6; border-radius: 8px 8px 0px 0px"
+                >
+                  <img src="../assets/loksabha.png" alt="" class="mx-auto" />
+                </div>
+                <p class="font-extrabold text-2xl mt-6 px-4">Lok Sabha Volunteer</p>
+                <p class="mt-4 px-4 text-sm pb-6">
+                  Become a Lok Sabha Volunteer: Be a part of our team and help make a
+                  big difference in your area. Work with us for a better and united
+                  India. Your efforts are important. Sign up now to start making a
+                  change!
+                </p>
+              </div>
+               <button class="submit-btn mx-6 mt-4 shadow-xl" onclick="toggleModal()">Register</button>
+        </div>
+        
+
+        <div class="flex flex-col justify-center">
+            <div class="pb-4 shadow-xl">
+                <div
+                  style="background-color: #46b0d3; border-radius: 8px 8px 0px 0px; overflow: hidden;"
+                >
+                  <img src="../assets/volunteer.png" alt="" class="mx-auto" />
+                </div>
+                <p class="font-extrabold text-2xl mt-6 px-4">Skilled Volunteer</p>
+                <p class="mt-4 px-4 text-sm">
+                  If you're a video editor, graphic designer, data analyst, content
+                  writer, or web designer, your expertise can drive our campaign
+                  forward. Join us in shaping a united, better India. Your skills are
+                  invaluable. Come, contribute to our cause!
+                </p>
+              </div>
+              <button class="submit-btn mx-6 mt-4 shadow-xl" onclick="toggleModal()">Register</button>
+        </div>
+        
+        <div></div>
+      </div>
+    </div>
+
+    <div class="flex mt-16 px-32 mb-8 items-center">
+      <div class="w-[40%]">
+        <p class="mission">OUR MISSION</p>
+        <p class="font-extrabold text-4xl mt-4">
+          Strengthening India's unity and progress through democratic engagement
+        </p>
+      </div>
+
+      <div class="carousel-container text-center">
+        <div class="carousel">
+          <div class="carousel-item text-white px-16 py-8">
+            <h1 class="text-xl font-bold">
+              Our combined efforts can ignite a wave of positive change in
+              India.
+            </h1>
+            <img src="../assets/testimonial.svg" alt="" class="mx-auto mt-2" />
+            <p class="font-medium text-base mt-2">Vaibhav Walia</p>
+            <p class="text-xs">Chairman - War Room Communication Department</p>
+          </div>
+          <div class="carousel-item text-white px-16 py-8">
+            <h1 class="text-xl font-bold">
+              Our combined efforts can ignite a wave of positive change in
+              India.
+            </h1>
+            <img src="../assets/testimonial.svg" alt="" class="mx-auto mt-2" />
+            <p class="font-medium text-base mt-2">Vaibhav Walia</p>
+            <p class="text-xs">Chairman - War Room Communication Department</p>
+          </div>
+          <div class="carousel-item text-white px-16 py-8">
+            <h1 class="text-xl font-bold">
+              Our combined efforts can ignite a wave of positive change in
+              India.
+            </h1>
+            <img src="../assets/testimonial.svg" alt="" class="mx-auto mt-2" />
+            <p class="font-medium text-base mt-2">Vaibhav Walia</p>
+            <p class="text-xs">Chairman - War Room Communication Department</p>
+          </div>
+          <div class="carousel-item text-white px-16 py-8">
+            <h1 class="text-xl font-bold">
+              Our combined efforts can ignite a wave of positive change in
+              India.
+            </h1>
+            <img src="../assets/testimonial.svg" alt="" class="mx-auto mt-2" />
+            <p class="font-medium text-base mt-2">Vaibhav Walia</p>
+            <p class="text-xs">Chairman - War Room Communication Department</p>
+          </div>
+        </div>
+
+        <div class="carousel-nav">
+          <div class="nav-item active"></div>
+          <div class="nav-item"></div>
+          <div class="nav-item"></div>
+          <div class="nav-item"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <button
+          onclick="toggleModal()"
+          class="text-2xl float-right text-gray-600 hover:text-gray-800 focus:outline-none"
+        >
+          &times;
+        </button>
+        <br /><br />
+        <div class="mb-4">
+          <p class="text-xl font-bold">
+            Thank you for becoming a
+            <span style="color: #293eb6">Lok Sabha Volunteer</span>
+          </p>
+          <p class="text-sm text-center mt-2" style="color: #4f4f4f">
+            Let’s make a difference
+          </p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div style="height: 1px; width: 31%; background: #e1e1e1"></div>
+          <p class="font-medium text-base">Enter Your Details</p>
+          <div style="height: 1px; background: #e1e1e1; width: 31%"></div>
+        </div>
+
+        <form action="" class="flex flex-col gap-6 justify-center mt-8">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your First Name"
+          />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your Last Name"
+          />
+          <select name="gen" id="gen" class="form-control">
+            <option value="Select Your Gender" class="hidden">
+              Select Your Gender
+            </option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <select name="gen" id="gen" class="form-control">
+            <option value="Select Your Gender" class="hidden">
+              Religion
+            </option>
+            <option value="male">Hinduism</option>
+            <option value="female">Sikhism</option>
+            <option value="female">Buddhism</option>
+            <option value="female">Jainism</option>
+          </select>
+          <input type="date" name="" id="" class="form-control" />
+          <div class="flex">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="form-control w-[80%]"
+              placeholder="Enter Mobile Number"
+            />
+            <button class="form-btn">Send OTP</button>
+          </div>
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter Your Email"
+            class="form-control"
+          />
+
+          <select id="states" name="states" class="form-control">
+            <option value="Select State hidden">Select State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+
+          <select name="" id="" class="form-control">
+            <option value="">Lok Sabha</option>
+          </select>
+
+          <select name="" id="" class="form-control">
+            <option value="">Lok Sabha</option>
+          </select>
+          <div class="flex items-center gap-4">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="form-control w-[80%]"
+              placeholder="Enter Your Aadhar Card No"
+            />
+           
+              <input type="file" />
+          
+          </div>
+          <div class="flex items-center gap-4">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="form-control w-[80%]"
+              placeholder="Enter Your PAN Card No"
+            />
+          
+              <input type="file" />
+          
+          </div>
+          <div class="flex items-center gap-4">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="form-control w-[80%]"
+              placeholder="Enter Your Voter ID No"
+            />
+              <input type="file"/>
+          </div>
+
+          <div class="relative form-control">
+            <p>Upload Your Signature</p>
+            <input type="file" name="" id="" class="absolute w-full opacity-0">
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+
+      </div>
+    </div>
+
+    <script>
+      const carousel = document.querySelector(".carousel");
+      const navItems = document.querySelectorAll(".nav-item");
+
+      let currentIndex = 0;
+
+      function updateCarousel() {
+        const translateValue = -currentIndex * 100 + "%";
+        carousel.style.transform = "translateX(" + translateValue + ")";
+      }
+
+      function setActiveNavItem(index) {
+        navItems.forEach((item, i) => {
+          item.classList.toggle("active", i === index);
+        });
+      }
+
+      navItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          currentIndex = index;
+          updateCarousel();
+          setActiveNavItem(currentIndex);
+        });
+      });
+
+      function toggleModal() {
+        console.log("modal clicked");
+        const modal = document.getElementById("myModal");
+        modal.style.display =
+          modal.style.display === "none" || modal.style.display === ""
+            ? "flex"
+            : "none";
+      }
+
+      // Close the modal if the overlay is clicked
+      window.addEventListener("click", (event) => {
+        const modal = document.getElementById("myModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
