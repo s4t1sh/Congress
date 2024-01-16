@@ -30,24 +30,25 @@
   <body>
     <header class="flex justify-between items-center p-4">
       <div class="flex gap-4 items-center">
-        <img src="./assets/logo.png" alt="logo" />
-        <p class="font-normal text-4xl">Communication Department (War Room)</p>
+        <img src="./assets/logo.png" alt="logo" class="w-[50px] lg:w-auto"/>
+        <p class="font-normal lg:text-4xl text-xl">Communication Department (War Room)</p>
       </div>
     </header>
 
     <div class="relative">
-      <img src="./assets/banner.png" alt="" class="w-full" />
+      <img src="./assets/banner.png" alt="" class="w-full hidden lg:block" />
+      <img src="./assets/mobile-banner.png" alt="" class="lg:hidden w-full">
 
-      <div class="absolute top-1/3 ps-8">
-        <p class="text-white font-semibold text-2xl">
+      <div class="absolute lg:top-1/3 top-[5%] ps-8">
+        <p class="text-white font-semibold lg:text-2xl text-xl">
           Join the Volunteer program of Communication Department
         </p>
-        <p class="banner-text mt-4">
+        <p class="banner-text mt-4 text-[25px] lg:text-[50px]">
           Be a part of the change <br />
           in the 2024 General Elections"
         </p>
         <button
-          class="flex justify-center items-center gap-8 bg-white px-[20px] py-[16px] rounded-lg font-medium mt-4"
+          class="flex justify-center items-center lg:gap-8 gap-4 bg-white lg:px-[20px] lg:py-[16px] p-2 rounded-lg font-medium mt-4"
           onclick="toggleModal()"
         >
           Sign Up to Volunteer
@@ -56,7 +57,7 @@
       </div>
     </div>
 
-    <div style="background: #f8f5f5" class="flex items-center gap-6 px-24 py-4">
+    <div style="background: #f8f5f5" class="flex lg:items-center gap-6 lg:px-24 lg:py-4 p-4 flex-col lg:flex-row">
       <div class="flex gap-4 items-center">
         <img
           src="./assets/icons/star.png"
@@ -99,7 +100,7 @@
         Choose from the options
       </p>
 
-      <div class="grid grid-cols-4 gap-8 px-28 mt-8">
+      <div class="grid lg:grid-cols-4 gap-8 lg:px-28 px-4 mt-8">
         <div></div>
 
         <div class="flex flex-col justify-center">
@@ -136,22 +137,22 @@
                   invaluable. Come, contribute to our cause!
                 </p>
               </div>
-              <button class="submit-btn mx-6 mt-4 shadow-xl" onclick="toggleModal()">Register</button>
+              <button class="submit-btn mx-6 mt-4 shadow-xl" onclick="toggleModal2()">Register</button>
         </div>
         
         <div></div>
       </div>
     </div>
 
-    <div class="flex mt-16 px-32 mb-8 items-center">
-      <div class="w-[40%]">
+    <div class="lg:flex lg:mt-16 mt-4 lg:px-32 px-4 mb-8 items-center">
+      <div class="lg:w-[40%]">
         <p class="mission">OUR MISSION</p>
-        <p class="font-extrabold text-4xl mt-4">
+        <p class="font-extrabold lg:text-4xl text-2xl mt-4">
           Strengthening India's unity and progress through democratic engagement
         </p>
       </div>
 
-      <div class="carousel-container text-center">
+      <div class="carousel-container text-center mt-6 lg:m-auto">
         <div class="carousel">
           <div class="carousel-item text-white px-16 py-8">
             <h1 class="text-xl font-bold">
@@ -211,7 +212,7 @@
         </button>
         <br /><br />
         <div class="mb-4">
-          <p class="text-xl font-bold">
+          <p class="lg:text-xl text-lg text-center font-bold">
             Thank you for becoming a
             <span style="color: #293eb6">Lok Sabha Volunteer</span>
           </p>
@@ -220,9 +221,9 @@
           </p>
         </div>
         <div class="flex items-center gap-4">
-          <div style="height: 1px; width: 31%; background: #e1e1e1"></div>
-          <p class="font-medium text-base">Enter Your Details</p>
-          <div style="height: 1px; background: #e1e1e1; width: 31%"></div>
+          <div style="height: 1px; background: #e1e1e1" class="w-[33%] lg:w-[34%]"></div>
+          <p class="font-medium lg:text-base text-[0.7rem]">Enter Your Details</p>
+          <div style="height: 1px; background: #e1e1e1;" class="w-[33%] lg:w-[34%]"></div>
         </div>
 
         <form action="" class="flex flex-col gap-6 justify-center mt-8">
@@ -237,21 +238,29 @@
             placeholder="Enter Your Last Name"
           />
           <select name="gen" id="gen" class="form-control">
-            <option value="Select Your Gender" class="hidden">
+            <option value="" class="hidden">
               Select Your Gender
             </option>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
           <select name="gen" id="gen" class="form-control">
-            <option value="Select Your Gender" class="hidden">
+            <option value="" class="hidden">
               Religion
             </option>
-            <option value="male">Hinduism</option>
-            <option value="female">Sikhism</option>
-            <option value="female">Buddhism</option>
-            <option value="female">Jainism</option>
+            <option value="hinduism">Hinduism</option>
+            <option value="sikhism">Sikhism</option>
+            <option value="buddhism">Buddhism</option>
+            <option value="jainism">Jainism</option>
           </select>
+
+          <select name="caste" id="caste" class="form-control">
+            <option value="" class="hidden">Select Your Caste</option>
+            <option value="gen">General</option>
+            <option value="sc/st">SC/ST</option>
+            <option value="obc">OBC</option>
+          </select>
+
           <input type="date" name="" id="" class="form-control" />
           <div class="flex">
             <input
@@ -308,7 +317,7 @@
           </select>
 
           <select name="" id="" class="form-control">
-            <option value="">Lok Sabha</option>
+            <option value="">Vidhan Sabha</option>
           </select>
           <div class="flex items-center gap-4">
             <input
@@ -357,6 +366,175 @@
       </div>
     </div>
 
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <button
+          onclick="toggleModal2()"
+          class="text-2xl float-right text-gray-600 hover:text-gray-800 focus:outline-none"
+        >
+          &times;
+        </button>
+        <br /><br />
+        <div class="mb-4">
+          <p class="lg:text-xl text-lg text-center font-bold">
+            Thank you for becoming a
+            <span style="color: #293eb6">Skilled Volunteer</span>
+          </p>
+          <p class="text-sm text-center mt-2" style="color: #4f4f4f">
+            Let’s make a difference
+          </p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div style="height: 1px; background: #e1e1e1" class="w-[33%] lg:w-[34%]"></div>
+          <p class="font-medium lg:text-base text-[0.7rem]">Enter Your Details</p>
+          <div style="height: 1px; background: #e1e1e1;" class="w-[33%] lg:w-[34%]"></div>
+        </div>
+
+        <form action="" class="flex flex-col gap-6 justify-center mt-8">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your First Name"
+          />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your Last Name"
+          />
+          <select name="gen" id="gen" class="form-control">
+            <option value="" class="hidden">
+              Select Your Gender
+            </option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <select name="gen" id="gen" class="form-control">
+            <option value="" class="hidden">
+              Religion
+            </option>
+            <option value="hinduism">Hinduism</option>
+            <option value="sikhism">Sikhism</option>
+            <option value="buddhism">Buddhism</option>
+            <option value="jainism">Jainism</option>
+          </select>
+
+          <select name="caste" id="caste" class="form-control">
+            <option value="" class="hidden">Select Your Caste</option>
+            <option value="gen">General</option>
+            <option value="sc/st">SC/ST</option>
+            <option value="obc">OBC</option>
+          </select>
+
+          <input type="date" name="" id="" class="form-control" />
+          <div class="flex">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="form-control w-[80%]"
+              placeholder="Enter Mobile Number"
+            />
+            <button class="form-btn">Send OTP</button>
+          </div>
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter Your Email"
+            class="form-control"
+          />
+
+          <select id="states" name="states" class="form-control">
+            <option value="Select State hidden">Select State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+
+          <select name="" id="" class="form-control">
+            <option value="">Lok Sabha</option>
+          </select>
+
+          <select name="" id="" class="form-control">
+            <option value="">Vidhan Sabha</option>
+          </select>
+
+          <select name="skill" id="skill" class="form-control">
+            <option value="" class="hidden">Select Your Skill</option>
+            <option value="skill1">Skill 1</option>
+            <option value="skill2">Skill 2</option>
+            <option value="skill3">Skill 3</option>
+          </select>
+
+
+          <div class="flex items-center gap-4">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="form-control w-[80%]"
+              placeholder="Enter Your Aadhar Card No"
+            />
+           
+              <input type="file" />
+          
+          </div>
+
+          <div class="flex items-center gap-4">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="form-control w-[80%]"
+              placeholder="Enter Your PAN Card No"
+            />
+          
+              <input type="file" />
+          
+          </div>
+          <div class="flex items-center gap-4">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="form-control w-[80%]"
+              placeholder="Enter Your Voter ID No"
+            />
+              <input type="file"/>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+
+      </div>
+    </div>
+
     <script>
       const carousel = document.querySelector(".carousel");
       const navItems = document.querySelectorAll(".nav-item");
@@ -383,8 +561,15 @@
       });
 
       function toggleModal() {
-        console.log("modal clicked");
         const modal = document.getElementById("myModal");
+        modal.style.display =
+          modal.style.display === "none" || modal.style.display === ""
+            ? "flex"
+            : "none";
+      }
+
+      function toggleModal2() {
+        const modal = document.getElementById("myModal2");
         modal.style.display =
           modal.style.display === "none" || modal.style.display === ""
             ? "flex"
@@ -394,8 +579,12 @@
       // Close the modal if the overlay is clicked
       window.addEventListener("click", (event) => {
         const modal = document.getElementById("myModal");
+        const modal2 = document.getElementById("myModal2");
         if (event.target === modal) {
           modal.style.display = "none";
+        }
+        else if(event.target === modal2){
+          modal2.style.display = "none";
         }
       });
     </script>

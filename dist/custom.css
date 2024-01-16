@@ -26,7 +26,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .banner-text{
     color: #FDC909;
-    font-size: 50px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -45,7 +44,6 @@ input[type="number"]::-webkit-outer-spin-button {
     position: relative;
     overflow: hidden;
     max-width: 600px;
-    margin: auto;
   }
 
   .carousel {
@@ -93,7 +91,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .modal-content {
-    margin-top: 520px;
+    margin-top: 610px;
     margin-bottom: 25px;
     background-color: #fff;
     padding: 20px;
